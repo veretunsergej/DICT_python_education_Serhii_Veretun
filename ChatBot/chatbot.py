@@ -19,7 +19,32 @@ def guess_age():
     print(f"Your age is {age}; that's a good time to start programming!")
 
 
+def count():
+    print("Now I will prove to you that I can count to any number you want.")
+    num = int(input())
+    for i in range(num + 1):
+        print(f"{i} !")
+
+
+def test():
+    print("Let's test your programming knowledge.")
+    print("Why do we use methods?")
+    print("1. To repeat a statement multiple times.")
+    print("2. To decompose a program into several small subroutines.")
+    print("3. To determine the execution time of a program.")
+    print("4. To interrupt the execution of a program.")
+    while True:
+        answer = input()
+        if answer == "2":
+            break
+        print("Please, try again.")
+    print("Completed, have a nice day!")
+    print("Congratulations, have a nice day!")
+
+
 if __name__ == '__main__':
     greet("DICT_Bot", "2020")
     remind_name()
     guess_age()
+    count()
+    test()
